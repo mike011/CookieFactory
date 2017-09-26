@@ -12,7 +12,12 @@
 		4CE36ED81F770445002F64AA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CE36ED61F770445002F64AA /* Main.storyboard */; };
 		4CE36EDA1F770445002F64AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CE36ED91F770445002F64AA /* Assets.xcassets */; };
 		4CE36EDD1F770445002F64AA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CE36EDB1F770445002F64AA /* LaunchScreen.storyboard */; };
-		4CE36EE81F770446002F64AA /* CookieFactoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE36EE71F770446002F64AA /* CookieFactoryTests.swift */; };
+		4CE36EF31F7707F3002F64AA /* CookieTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE36EF21F7707F3002F64AA /* CookieTests.swift */; };
+		4CE36EF51F770CB7002F64AA /* Cookie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE36EF41F770CB7002F64AA /* Cookie.swift */; };
+		4CE36EF61F770CE4002F64AA /* Cookie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE36EF41F770CB7002F64AA /* Cookie.swift */; };
+		4CE36EF81F770F06002F64AA /* CookieControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE36EF71F770F06002F64AA /* CookieControllerTests.swift */; };
+		4CE36EFA1F770F7C002F64AA /* CookieController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE36EF91F770F7C002F64AA /* CookieController.swift */; };
+		4CE36EFB1F770F9D002F64AA /* CookieController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE36EF91F770F7C002F64AA /* CookieController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,8 +39,11 @@
 		4CE36EDC1F770445002F64AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4CE36EDE1F770445002F64AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4CE36EE31F770446002F64AA /* CookieFactoryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CookieFactoryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		4CE36EE71F770446002F64AA /* CookieFactoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CookieFactoryTests.swift; sourceTree = "<group>"; };
 		4CE36EE91F770446002F64AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4CE36EF21F7707F3002F64AA /* CookieTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CookieTests.swift; sourceTree = "<group>"; };
+		4CE36EF41F770CB7002F64AA /* Cookie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cookie.swift; sourceTree = "<group>"; };
+		4CE36EF71F770F06002F64AA /* CookieControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CookieControllerTests.swift; sourceTree = "<group>"; };
+		4CE36EF91F770F7C002F64AA /* CookieController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CookieController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +91,8 @@
 				4CE36ED91F770445002F64AA /* Assets.xcassets */,
 				4CE36EDB1F770445002F64AA /* LaunchScreen.storyboard */,
 				4CE36EDE1F770445002F64AA /* Info.plist */,
+				4CE36EF41F770CB7002F64AA /* Cookie.swift */,
+				4CE36EF91F770F7C002F64AA /* CookieController.swift */,
 			);
 			path = CookieFactory;
 			sourceTree = "<group>";
@@ -90,8 +100,9 @@
 		4CE36EE61F770446002F64AA /* CookieFactoryTests */ = {
 			isa = PBXGroup;
 			children = (
-				4CE36EE71F770446002F64AA /* CookieFactoryTests.swift */,
 				4CE36EE91F770446002F64AA /* Info.plist */,
+				4CE36EF21F7707F3002F64AA /* CookieTests.swift */,
+				4CE36EF71F770F06002F64AA /* CookieControllerTests.swift */,
 			);
 			path = CookieFactoryTests;
 			sourceTree = "<group>";
@@ -150,8 +161,8 @@
 					};
 					4CE36EE21F770446002F64AA = {
 						CreatedOnToolsVersion = 9.0;
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
-						TestTargetID = 4CE36ECE1F770445002F64AA;
 					};
 				};
 			};
@@ -200,7 +211,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				4CE36ED51F770445002F64AA /* ViewController.swift in Sources */,
+				4CE36EF51F770CB7002F64AA /* Cookie.swift in Sources */,
 				4CE36ED31F770445002F64AA /* AppDelegate.swift in Sources */,
+				4CE36EFA1F770F7C002F64AA /* CookieController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -208,7 +221,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4CE36EE81F770446002F64AA /* CookieFactoryTests.swift in Sources */,
+				4CE36EF61F770CE4002F64AA /* Cookie.swift in Sources */,
+				4CE36EF31F7707F3002F64AA /* CookieTests.swift in Sources */,
+				4CE36EF81F770F06002F64AA /* CookieControllerTests.swift in Sources */,
+				4CE36EFB1F770F9D002F64AA /* CookieController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -383,16 +399,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CY96495443;
 				INFOPLIST_FILE = CookieFactoryTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ca.charland.CookieFactoryTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CookieFactory.app/CookieFactory";
 			};
 			name = Debug;
 		};
@@ -400,7 +416,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CY96495443;
 				INFOPLIST_FILE = CookieFactoryTests/Info.plist;
@@ -409,7 +425,6 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CookieFactory.app/CookieFactory";
 			};
 			name = Release;
 		};
